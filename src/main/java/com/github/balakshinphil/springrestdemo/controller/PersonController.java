@@ -23,6 +23,7 @@ public class PersonController {
 
 
     @PostMapping("/api/person")
+    @ResponseStatus(HttpStatus.CREATED)
     public Map<String, Long> addPerson(@RequestBody @Valid Person person) {
         return personService.addPerson(person);
     }
