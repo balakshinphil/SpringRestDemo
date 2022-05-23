@@ -13,15 +13,15 @@
 — Receives JSON object with Person object in request's body:  
 ```json
 {
-    "name": <String>,
-    "age": <Integer>,
-    "sex": <Boolean>
+    "name": "<String>",
+    "age": "<Integer>",
+    "sex": "<Boolean>"
 }
  ```
 — Returns JSON object with ID:  
 ```json
 {
-  "id": <Long>
+  "id": "<Long>"
 }
 ```
 — Returns 409 status code if Person with given name already exists
@@ -31,9 +31,9 @@
 — Receives JSON object with Person object in request's body and ID in request's path:  
 ```json
 {
-    "name": <String>,
-    "age": <Integer>,
-    "sex": <Boolean>
+    "name": "<String>",
+    "age": "<Integer>",
+    "sex": "<Boolean>"
 }
  ```
 — Returns 404 status code if instance with given ID not found  
@@ -43,9 +43,9 @@
 — Returns JSON with Person data:
 ```json
 {
-    "name": <String>,
-    "age": <Integer>,
-    "sex": <String>(Male/Female)
+    "name": "<String>",
+    "age": "<Integer>",
+    "sex": "<String>(Male/Female)"
 }
 ```
 — Returns 404 status code if instance with given ID not found  
@@ -57,11 +57,15 @@
 ```json
 [
     {
-      "name": <String>,
-      "age": <Integer>,
-      "sex": <String>(Male/Female)
-    },
-  ...
+      "name": "<String>",
+      "age": "<Integer>",
+      "sex": "<String>(Male/Female)"
+    }, 
+    {
+      "name": "<String>",
+      "age": "<Integer>",
+      "sex": "<String>(Male/Female)"
+    }
 ]
 ```
 
